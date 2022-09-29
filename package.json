@@ -1,0 +1,20 @@
+{
+  "name": "castcle-protocol",
+  "version": "1.0.0",
+  "repository": "https://github.com/castcle/castcle-protocol.git",
+  "scripts": {
+    "build:contract": "forge build",
+    "generate:abi": "forge inspect Cast abi | tee Cast.json",
+    "examples:kms": "ts-node examples/kms-integration"
+  },
+  "dependencies": {
+    "@rumblefishdev/eth-signer-kms": "^2.2.0",
+    "aws-sdk": "^2.1225.0",
+    "ethers": "^5.7.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.23",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  }
+}
